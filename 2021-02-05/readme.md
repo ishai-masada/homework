@@ -23,7 +23,7 @@ You can find these two passwords in `easy.txt` and `hard.txt`. The difficulty is
 really just a matter of computing time, if you crack `easy.txt` you'll have no
 problem cracking the other one.
 
-In order to check whether you've guess correctly you'll want to use passlib.
+In order to check whether you've guessed correctly you'll want to use passlib.
 
 ``` bash
 python3 -m pip install passlib
