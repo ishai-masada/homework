@@ -1,0 +1,30 @@
+╒══════════════════════════════════════════════════════════════════════════════╕
+│                                                                              │
+│ PROFESSIONAL COMPUTER WIZARD,                                                │
+│                                                                              │
+│ WE, THE BOARD OF THE LIBRARY OF AMERICAN MEDIA AND ENTERTAINMENT (LAME),     │
+│ REQUEST THAT YOU ADD THE FOLLOWING ITEMS TO THE COMPUTER KNOWLEDGE FILE YOU  │
+│ CREATE. THEY HAVE BEEN DEEMED CULTURALLY AND HISTORICALLY SIGNIFICANT BY OUR │
+│ UNBIASED PANEL OF AMERICAN CULTURE EXPERTS. WE REQUIRE THAT YOU DO NOT       │
+│ QUESTION OUR CHOICES AS THEY HAVE BEEN PROVEN TO BE OBJECTIVELY SOUND.       │
+│                                                                              │
+│ REGARDS,                                                                     │
+│   THE BOARD                                                                  │
+│                                                                              │
+╘══════════════════════════════════════════════════════════════════════════════╛
+
+MOVIES:
+  - Back to the Future (1985)
+  - Star Wars (1977)
+  - Jurassic Park (1993)
+  - Drive (2011)
+
+ALBUMS:
+  - The Beatles - The White Album
+  - David Bowie - The Rise and Fall of Ziggy Stardust and the Spiders from Mars
+  - Hannah Montana - Best of Hannah Montana
+
+GAMES:
+  - Star Wars - Episode I Racer (Nintendo 64)
+  - Half Life: 2 (PC)
+  - LittleBigPlanet (PS3)
