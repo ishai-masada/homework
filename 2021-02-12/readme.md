@@ -88,7 +88,7 @@ dale.date_of_birth = '1994-08-23'
 session.commit()
 ```
 
-Lastly, if you want to remove a rows from the database you can do this:
+Lastly, if you want to remove a row from the database you can do this:
 
 ``` python3
 session.remove(dale)
