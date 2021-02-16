@@ -54,7 +54,60 @@ class Person(Base):
         new_person = cls(name=name, gender=gender, date_of_birth=date_of_birth)
         return new_person
 
+class Movies(Base): 
+    __tablename__ = 'movies'
+    id = Column(Integer, primary_key=True)
+    title = Column(String, nullable=False)
+    director = Column(String)
+    year = Column(Integer)
+    rating = Column(String, nullable=False)
+    running_length = Column(Integer)
 
+    def __repr__(self):
+        return f'{self.title}'
+
+    @classmethod
+    def create(title: str, director: Optional[str] = None, 
+               year: Optional[int] = None, rating: int, running_length: Opyional[int] = None, cls):
+        new_movie = cls(title=title, director=director, year=year, rating=rating, running_length=running_length)
+        return new_movie
+
+class Albums(Base):
+    __tablename__ = 'albums'
+    id = Column(Integer, primary_key=True)
+    title = Column(String, nullable=False)
+    artist = Column(String, nullable=False)
+    number_of_tracks = Column(Integer, nullable=False)
+    year = Column(Integer)
+
+    def __repr__(self):
+        return f'{self.title}'
+
+    @classmethod
+    def create(title: str, artist: str, number_of_tracks: int,
+               year: Optional[int] = None, cls):
+        new_album = cls(title=title, atrist=artist, number_of_tracks=number_of_tracks, year+year)
+        return new_album
+
+
+class Games(Base):
+    __tablenames__ = 'games'
+    id = Column(Integer, primary_key=True)
+    title = Column(String, nullable=False)
+    developer = Column(String, nullable=False)
+    console = Column(String, nullable=False)
+    year = Column(Integer)
+
+    def __repr__(self):
+        return f'{self.name}'
+        
+    @classmethod
+    def create(title: str, developer: str,
+               console: str, year: Optional[int] = None, cls):
+        new_game = cls(title=title, developer=developer, console=console, year=year)
+        return new_game
+
+        
 # Creates database and tables for all the models we've defined.
 # WARNING: This does not update tables. If you change your model schema after
 # creating the database you'll either need to manually make the changes
