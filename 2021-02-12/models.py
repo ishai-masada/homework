@@ -67,8 +67,8 @@ class Movies(Base):
         return f'{self.title}'
 
     @classmethod
-    def create(title: str, director: Optional[str] = None, 
-               year: Optional[int] = None, rating: int, running_length: Opyional[int] = None, cls):
+    def create(cls, title: str, rating: str, director: Optional[str] = None, year: Optional[int] = None, 
+               running_length: Optional[int] = None):
         new_movie = cls(title=title, director=director, year=year, rating=rating, running_length=running_length)
         return new_movie
 
@@ -84,14 +84,13 @@ class Albums(Base):
         return f'{self.title}'
 
     @classmethod
-    def create(title: str, artist: str, number_of_tracks: int,
-               year: Optional[int] = None, cls):
-        new_album = cls(title=title, atrist=artist, number_of_tracks=number_of_tracks, year+year)
+    def create(cls, title: str, artist: str, number_of_tracks: int, year: Optional[int] = None):
+        new_album = cls(title=title, atrist=artist, number_of_tracks=number_of_tracks, year=year)
         return new_album
 
 
 class Games(Base):
-    __tablenames__ = 'games'
+    __tablename__ = 'games'
     id = Column(Integer, primary_key=True)
     title = Column(String, nullable=False)
     developer = Column(String, nullable=False)
@@ -102,8 +101,7 @@ class Games(Base):
         return f'{self.name}'
         
     @classmethod
-    def create(title: str, developer: str,
-               console: str, year: Optional[int] = None, cls):
+    def create(cls, title: str, developer: str, console: str, year: Optional[int] = None):
         new_game = cls(title=title, developer=developer, console=console, year=year)
         return new_game
 
